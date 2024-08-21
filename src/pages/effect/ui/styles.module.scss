@@ -1,0 +1,47 @@
+.effect {
+  padding: 20px 0;
+  h1 {
+    margin-bottom: 20px;
+    &::first-letter {
+      text-transform: capitalize;
+    }
+  }
+
+  button {
+    margin-right: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+
+    &::first-letter {
+      text-transform: capitalize;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .post {
+    margin-bottom: 20px;
+    span {
+      color: red;
+    }
+  }
+}
+
+.effect.dark {
+  color: white;
+  button {
+    background-color: gray;
+    color: #000;
+  }
+}
+
+.effect.light {
+  button {
+    background-color: #000;
+    color: #fff;
+  }
+}

@@ -1,0 +1,88 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+
+  .switch,
+  .lang_btns__btn {
+    background-color: #000;
+    color: #fff;
+  }
+
+  .active_lang {
+    background-color: red;
+  }
+}
+
+.header.dark {
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #000;
+
+  .switch,
+  .lang_btns__btn {
+    background-color: gray;
+    color: #000;
+  }
+  .active_lang {
+    background-color: red;
+    color: #fff;
+  }
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+
+  list-style: none;
+  margin-right: 20px;
+
+  li {
+    margin-right: 10px;
+    &::first-letter {
+      text-transform: capitalize;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__item {
+    text-decoration: none;
+    color: inherit;
+    list-style-type: none;
+  }
+}
+
+.active {
+  color: red;
+}
+
+.switch {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 10px;
+  margin-right: 20px;
+  &::first-letter {
+    text-transform: capitalize;
+  }
+}
+
+.lang_btns {
+  display: flex;
+
+  &__btn {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+    margin-right: 10px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
